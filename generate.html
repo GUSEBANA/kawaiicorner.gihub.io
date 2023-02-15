@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="generate.css">
+    <link rel="stylesheet" href="C:\Users\honor\OneDrive\Рабочий стол\Кавайный уголок 2.0\css\adaptive\adaptgen.css">
+    <title>Кавайный Уголок</title>
+</head>
+
+<body>
+    <header>
+    <nav>
+        <div class="logo">
+        <img class="logoimg" src="image/blushing.png" alt="">
+        <a class="logoname" href="#">Кавайный Уголок</a>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="#">Галерея</a></li>
+            <li><a href="registers.html">Регистрация</a></li>
+            <li><a href="generate.html">Редактор</a></li>
+            <li><a href="#">О сайте</a></li>
+        </ul>
+    </nav>
+    <hr class="line">
+    </header>
+    
+        <div class="container">
+            <form>
+                <input type="text" placeholder="Enter your prompt here..." name="prompt" id="prompt">
+                <input type="text" placeholder="Enter your negative prompt here..." name="negative_prompt" id="negative_prompt">
+                <select class="1">
+                    <option value="1">text1</option>
+                    <option value="1">text2</option>
+                    <option value="1">text3</option>
+                </select>
+
+                <select class="2">
+                    <option value="1">text1</option>
+                    <option value="1">text2</option>
+                    <option value="1">text3</option>
+                </select>
+
+                <select class="3">
+                    <option value="1">text1</option>
+                    <option value="1">text2</option>
+                    <option value="1">text3</option>
+                </select>
+
+            <div class="hzchoeto">
+                <div>
+                    <h1 class="rv">Семплы</h1>
+                    <span id="rangeValue">0</span>
+                    <Input class="range" type="range" value="0" min="0" max="1000" onChange="rangeSlide(this.value)" onmousemove="rangeSlide(this.value)"></Input>
+                </div>
+                <script type="text/javascript">
+                    function rangeSlide(value) {
+                        document.getElementById('rangeValue').innerHTML = value;
+                    }
+                </script>
+                <div>
+                    <h1 class="rv1">CFG</h1>
+                    <span id="rangeValue1">0</span>
+                    <Input class="range1" type="range" value="0" min="0" max="1000" onChange="rangeSlide1(this.value)" onmousemove="rangeSlide1(this.value)"></Input>
+                </div>
+                <script type="text/javascript">
+                    function rangeSlide1(value) {
+                        document.getElementById('rangeValue1').innerHTML = value;
+                    }
+                </script>
+
+            </div>
+
+        <div class="buttonpzdc">
+            <button class="download">Download</button>
+            <button class="public">Public</button>
+        </div>    
+
+            <div class="ramkapodimgepta"></div>
+            </form>
+        </div>
+
+</body>
+
+</html>
